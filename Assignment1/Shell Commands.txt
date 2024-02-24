@@ -1,0 +1,60 @@
+
+A.
+
+touch 20101502_1.txt 20101502_2.txt 20101502_3.txt 20101502_4.txt
+mkdir Nabil1 Nabil2
+mv 20101502_1.txt 20101502_2.txt 20101502_3.txt Nabil1
+cp Nabil1/20101502_1.txt Nabil1/20101502_2.txt Nabil2
+mkdir Nabil2/Nabil3
+cp -r Nabil1 Nabil2/Nabil3
+cd Nabil2/Nabil3
+ls -l
+cd Nabil1
+chmod go+rx 20101502_1.txt 20101502_2.txt 20101502_3.txt
+cd ..
+ls
+sudo mv Nabil3 /
+rm-rf*
+
+
+B.
+
+cat > course.txt
+CSE321 Operating System Section6
+CSE440 NLPII Section2
+CSE391 Programming for the internet Section1
+
+wc-l course.txt
+
+C.
+
+sudo ls -la /root/
+
+
+D.
+
+cat >lines.txt
+line1
+line2
+line3
+line4
+line5
+line6
+line7
+line8
+line9
+line10
+line11
+line12
+line13
+line14
+line15
+line16
+line17
+line18
+line19
+line20
+line21
+
+sed -n '5,17p' lines.txt
+
